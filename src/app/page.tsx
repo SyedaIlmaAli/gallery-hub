@@ -2,8 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { CldImage } from "next-cloudinary";
-import { CldUploadButton } from "next-cloudinary";
 import { useState } from "react";
 import TypeWriterComponent from "typewriter-effect";
 
@@ -15,7 +13,6 @@ export type UploadResult = {
 };
 
 export default function Home() {
-  const [imageId, setImageId] = useState("");
 
   return (
     <div className="flex flex-col justify-center items-center w-[90%]">

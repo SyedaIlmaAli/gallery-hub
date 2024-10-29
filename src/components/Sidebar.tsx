@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import {Heart} from "./icons/heart";
-import cloudinary from "cloudinary";
 import { HomeIcon } from "lucide-react";
 
 export type Folder = {
@@ -11,9 +10,7 @@ export type Folder = {
 }
 
 const Sidebar = async () => {
-  const { folders } = (await cloudinary.v2.api.root_folders()) as {
-    folders: Folder[];
-  };
+  
   return (
     <div className="pb-12 border-r h-full">
       <div className="space-y-4 py-4">
@@ -51,7 +48,7 @@ const Sidebar = async () => {
             </Link>
             {/* photo album */}
             {/* favourites */}
-            <Link href="/gallery">
+            <Link href="favourites">
               <Button variant="ghost" className="w-full justify-start text-lg">
                 <Heart className="w-6 h-6 mr-1 my-1"/>
                 Favourites

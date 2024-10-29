@@ -11,8 +11,7 @@ export default function UploadButton() {
   return (
     <Button asChild>
       <CldUploadButton
-        onSuccess={(result) => {
-          const results = result as UploadResult
+        onSuccess={() => {
           setTimeout(() => {
             router.refresh();
           }, 2000);
