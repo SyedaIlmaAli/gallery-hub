@@ -13,7 +13,6 @@ export type UploadResult = {
 };
 
 export default function Home() {
-
   return (
     <div className="flex flex-col justify-center items-center w-[90%]">
       <div className=" flex flex-col justify-center items-center h-[200px]">

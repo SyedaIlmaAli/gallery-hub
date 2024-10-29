@@ -1,16 +1,16 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import {Heart} from "./icons/heart";
+import { Heart } from "./icons/heart";
 import { HomeIcon } from "lucide-react";
 
 export type Folder = {
-  name:string; path:string, exteral_id: string
-
-}
+  name: string;
+  path: string;
+  exteral_id: string;
+};
 
 const Sidebar = async () => {
-  
   return (
     <div className="pb-12 border-r h-full">
       <div className="space-y-4 py-4">
@@ -22,7 +22,7 @@ const Sidebar = async () => {
             {/* Home */}
             <Link href="/">
               <Button variant="ghost" className="w-full justify-start text-lg">
-                <HomeIcon className="w-6 h-6 mr-3"/>
+                <HomeIcon className="w-6 h-6 mr-3" />
                 Home
               </Button>
             </Link>
@@ -50,7 +50,7 @@ const Sidebar = async () => {
             {/* favourites */}
             <Link href="favourites">
               <Button variant="ghost" className="w-full justify-start text-lg">
-                <Heart className="w-6 h-6 mr-1 my-1"/>
+                <Heart className="w-6 h-6 mr-1 my-1" />
                 Favourites
               </Button>
             </Link>

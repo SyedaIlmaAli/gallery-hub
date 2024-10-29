@@ -14,7 +14,7 @@ export function CloudinaryImage(
     onUnheart?: (unheartedResource: SearchResult) => void;
   } & Omit<CldImageProps, "src">
 ) {
-  const [transition, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
   const { imagedata, onUnheart } = props;
 
