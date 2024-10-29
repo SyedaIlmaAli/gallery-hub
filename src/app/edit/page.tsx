@@ -29,7 +29,7 @@ export default function EditPage({
     <section>
       <div className="flex flex-col gap-8">
         <div className="flex justify-between">
-          <h1 className="text-4xl font-bold">Edit {publicId}</h1>
+          <h1 className="text-4xl font-bold">Edit </h1>
         </div>
 
         <div className="flex gap-4">
